@@ -1,0 +1,5 @@
+colorama
+requests
+PySocks
+argparse
+tqdm
