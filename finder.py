@@ -94,7 +94,7 @@ def url(site):
                 adminCount += 1
 
                 print()
-                messenge.writeMessage('\n' + Fore.GREEN + Style.BRIGHT + ('  [RESULT]') + Fore.WHITE + Style.BRIGHT + '{:>}'.format(' http://' + reqLink,), 'bright')
+                messenge.writeMessage('\n' + Fore.YELLOW + Style.BRIGHT + ('  [RESULT]') + Fore.WHITE + Style.BRIGHT + '{:>}'.format(' http://' + reqLink,), 'bright')
                 print()
                 # Stopped process? and waiting for input for continue
                 n = 10
