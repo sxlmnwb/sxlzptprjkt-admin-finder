@@ -30,7 +30,7 @@ try:
     messenge = MessengeClass.Messenge()
 
 except():
-    exit('\n\t[x] Session Cancelled; Something wrong with import modules')
+    exit('\n' + Fore.RED + Style.BRIGHT + ('  [ERROR] ') + Fore.WHITE + Style.NORMAL + '{:>}'.format('Session Cancelled Unknown Error'), 'bright')
 
 # Get credits and print it
 messenge.writeMessage(Credits.getCredits()[0], 'red')
@@ -112,10 +112,12 @@ def url(site):
                 continue
 
         # Write last information about scanning with counters
-        messenge.writeMessage('\n\n  Completed \n', 'green')
-        messenge.writeMessage(str(adminCount) + ' Admin pages found', 'white')
-        messenge.writeMessage(str(totalCount) + ' total pages scanned', 'white')
-        messenge.writeInput('  [/] Scanning over; Press Enter to Exit', 'green')
+        print()
+        messenge.writeMessage(Fore.GREEN + Style.BRIGHT + ('  [COMPLETED]'), 'bright')
+        print()
+#       messenge.writeMessage(str(adminCount) + ' Admin Pages Found', 'white')
+#       messenge.writeMessage(str(totalCount) + ' Total Pages Scanned', 'white')
+        messenge.writeInput(Fore.YELLOW + Style.BRIGHT + ('  [/] ') + Fore.WHITE + Style.NORMAL + '{:>}'.format('Scanning Over Press Enter To Exit...'), 'bright')
         messenge.writeMessage('', 'white')
 
     except (KeyboardInterrupt, SystemExit):
@@ -352,18 +354,20 @@ def interactive():
                 continue
 
         # Write last information about scanning with counters
-        messenge.writeMessage('\n\n  Completed \n', 'green')
-        messenge.writeMessage(str(adminCount) + ' Admin pages found', 'white')
-        messenge.writeMessage(str(totalCount) + ' total pages scanned', 'white')
-        messenge.writeInput('  [/] Scanning over; Press Enter to Exit', 'green')
+        print()
+        messenge.writeMessage(Fore.GREEN + Style.BRIGHT + ('  [COMPLETED]'), 'bright')
+        print()
+#       messenge.writeMessage(str(adminCount) + ' Admin Pages Found', 'white')
+#       messenge.writeMessage(str(totalCount) + ' Total Pages Scanned', 'white')
+        messenge.writeInput(Fore.YELLOW + Style.BRIGHT + ('  [/] ') + Fore.WHITE + Style.NORMAL + '{:>}'.format('Scanning Over Press Enter To Exit...'), 'bright')
         messenge.writeMessage('', 'white')
 
     except (KeyboardInterrupt, SystemExit):
-        messenge.writeMessage('\n\t[x] Session Cancelled', 'red')
+        messenge.writeMessage('\n' + Fore.RED + Style.BRIGHT + ('  [ERROR] ') + Fore.WHITE + Style.NORMAL + '{:>}'.format('Session Cancelled'), 'bright')
         messenge.writeMessage('', 'white')
 
     except():
-        messenge.writeMessage('\n\t[x] Session Cancelled; Unknown [ERROR]', 'red')
+        messenge.writeMessage('\n' + Fore.RED + Style.BRIGHT + ('  [ERROR] ') + Fore.WHITE + Style.NORMAL + '{:>}'.format('Session Cancelled Unknown Error'), 'bright')
         messenge.writeMessage('', 'white')
 
 
