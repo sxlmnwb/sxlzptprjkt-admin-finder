@@ -11,7 +11,7 @@ git clone --depth=1 https://github.com/sxlmnwb/sxlzptprjkt-admin-finder finder
 cd finder
 pip install -r requirements.txt
 ```
-How To Usage :
+How to usage :
 ```
 usage: finder.py [-h] [-u URL] [-t] [-p PROXY] [-rp] [-r] [-v] [-U] [-i]
 
@@ -26,9 +26,13 @@ optional arguments:
     -U, --update             Update finder
     -i, --interactive        Interactive interface [other arguments not required]
 ```
-Simple Usage :
+Simple usage :
 ```
 ./finder.py -u www.target.com -r
+```
+If you scan subdomain  don't add `www` :
+```
+./finder.py -u target.com -r
 ```
 don't add `http://` or `https://` this finder works to detect whether the target is difficult to include SSL or not
 
