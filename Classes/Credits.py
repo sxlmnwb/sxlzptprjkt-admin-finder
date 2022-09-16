@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 #
-# // Copyright (C) 2021 Salman Wahib (sxlmnwb)
+# // Copyright (C) 2022 Salman Wahib (sxlmnwb)
 #
 
-__version__ = 'v1.5 Admin Finder (Goverment ID)'
+__version__ = 'v2.0 Admin Finder (Goverment ID)'
 __author__ = 'O.Koleda'
 __improver__= 'sxlmnwb'
 
